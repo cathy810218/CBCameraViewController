@@ -1,0 +1,16 @@
+PODS:
+  - CBCameraViewController (0.1.0)
+
+DEPENDENCIES:
+  - CBCameraViewController (from `../`)
+
+EXTERNAL SOURCES:
+  CBCameraViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CBCameraViewController: 65f6f111deb873d28df3625393211b5c1a1bb7a6
+
+PODFILE CHECKSUM: 260017a035ee45ebcfbebe5079fbef1a2d01f827
+
+COCOAPODS: 1.0.1

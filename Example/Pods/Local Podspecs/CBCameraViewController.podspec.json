@@ -1,0 +1,22 @@
+{
+  "name": "CBCameraViewController",
+  "version": "0.1.0",
+  "summary": "A short description of CBCameraViewController.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CBCameraViewController",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Cathy Oun": "cathy810218@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CBCameraViewController.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CBCameraViewController/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module CBCameraViewController {
+  umbrella header "CBCameraViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
