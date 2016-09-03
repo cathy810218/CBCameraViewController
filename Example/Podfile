@@ -1,7 +1,10 @@
 use_frameworks!
 
 target 'CBCameraViewController_Example' do
-  pod 'CBCameraViewController', :path => '/Users/cathy810218/Developer/cblue/CBCameraViewController'
+
+  pod 'CBCameraViewController', :path => '../'
+  pod 'SnapKit'
+
 
   target 'CBCameraViewController_Tests' do
     inherit! :search_paths

@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import CBCameraViewController
+import SnapKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let cameraVC = CBCameraViewController()
+        presentViewController(cameraVC, animated: false, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

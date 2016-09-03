@@ -7,69 +7,136 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00345C04A9DB94FA49674359D25281A7 /* CBCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C811467EBC527F80DBB9123C8581C5 /* CBCameraViewController.swift */; };
 		03BCAC6BFED59594F12A433E60E75B48 /* Pods-CBCameraViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC5D659BE1775CA8C0159CC67AE70D3 /* Pods-CBCameraViewController_Tests-dummy.m */; };
-		06355C1AA7F6D825D20C369311C33BBE /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB961954C83B8C612F747D7505FA6C /* ReplaceMe.swift */; };
-		12C1C3D5971278D4692DE095C5964E0D /* CBCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D8B08E56E4C26EB467C2A2E929BF69 /* CBCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22257571C3A06CC071A2A12E86F0A139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		339937CB3D2B3824279F6BBD425765D8 /* CBCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A335BB36F26F93EB01EB805FA868710C /* CBCameraViewController-dummy.m */; };
-		87D58CAC0A940957531DEF397E2DD6FB /* Pods-CBCameraViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E1977494B8EBF950677D57C4241662 /* Pods-CBCameraViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		986486FC3AD152F8201FC996F48501BA /* Pods-CBCameraViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F13C304B25335D818BF266E6FCEBDDFE /* Pods-CBCameraViewController_Example-dummy.m */; };
-		9DE640A51F12A45DE40E68A5CF426F10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		A288B71DD02141C1898946AEA043A960 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		0B1FA36B868AE285F68D404E9860A8FC /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42E6B36692CB79785C933E25719FA6F /* SnapKit.framework */; };
+		0B28BC8B487C0C9D785CACB2008649FD /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */; };
+		0F6B8CB41553F330DB41AD126090E659 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */; };
+		22257571C3A06CC071A2A12E86F0A139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1D10525428EE42117D40A1A64556D6 /* Foundation.framework */; };
+		3258C6138A48080C5E97521F754499E5 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3061A45F7542E986BCB23EBBD8AD4A13 /* ConstraintDescription.swift */; };
+		4426F0D364A7F868434BD33B595AC9B7 /* CBCameraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A335BB36F26F93EB01EB805FA868710C /* CBCameraViewController-dummy.m */; };
+		47B33C0F4692353F4C2B946DA75DF034 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03EFFB295211A70F01FAD48D41DF5F3 /* ConstraintMaker.swift */; };
+		4800DC2686D5445468C91DAA209F882E /* CBCameraViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D8B08E56E4C26EB467C2A2E929BF69 /* CBCameraViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50EFDBA40D0C04D42607AC8E145CC2CE /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */; };
+		590C29B3F3E888539DD9F62AC2EA22D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1D10525428EE42117D40A1A64556D6 /* Foundation.framework */; };
+		5EC95F67499D502CACDE5C20BF25355F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */; };
+		6D9113B5CD2CB378387BE2391BEA8BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1D10525428EE42117D40A1A64556D6 /* Foundation.framework */; };
+		7207C110A0FFC203B0B0311F0B07F12A /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */; };
+		7A3FDE191E4DD958F9B69ABE2A5AF9AD /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C745F502C842A223464EC61885F02BB /* Constraint.swift */; };
+		8BBDE7D1CE0AEEF814FD78C44C5B7104 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C496DA4CA3F61B29BB063F74876C70 /* EdgeInsets.swift */; };
+		AEDB3C6BE9424E276FCB7764460DCFB8 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */; };
+		C1780EC95CA8E029109BF53D7DE0A8BB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */; };
+		C71A48334655E0F57B7BB9AB616193DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1D10525428EE42117D40A1A64556D6 /* Foundation.framework */; };
+		D3E5DCE4727AF2DADEB75D6F0B687F5E /* Pods-CBCameraViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F13C304B25335D818BF266E6FCEBDDFE /* Pods-CBCameraViewController_Example-dummy.m */; };
 		DE538A2D8BBDED938D3E37B065555AB8 /* Pods-CBCameraViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E249BDEE37AD16B7D177DFC6BCA972D /* Pods-CBCameraViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4C1E2DEF17730A1CC3B229A803AB555 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9D825EDFB7B48387DCF5A7FC8D362C2 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */; };
+		EF0AC3228727D5E173A5F400622D979A /* Pods-CBCameraViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8E1977494B8EBF950677D57C4241662 /* Pods-CBCameraViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F907F062A89C7F5E668F82546E3EB611 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		196EFFAC83C276E7AD7289BF57F3B141 /* PBXContainerItemProxy */ = {
+		A4691E55C1546E8310DEFFB0BC40C9E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 28EAB6337BA8BA6C8DA267692E70E161;
+			remoteGlobalIDString = 78F989564630393E46EDE33EA9700488;
+			remoteInfo = SnapKit;
+		};
+		B2DF66B49C658CD734794F57F5A891C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78F989564630393E46EDE33EA9700488;
+			remoteInfo = SnapKit;
+		};
+		B9BC6CF1F3D70ECE19B8B81FF7BAAD6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 700BCCE2B11ADD20F6D485ABF96F9037;
 			remoteInfo = CBCameraViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		07D8B08E56E4C26EB467C2A2E929BF69 /* CBCameraViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBCameraViewController-umbrella.h"; sourceTree = "<group>"; };
 		0C5E263F2B7AEBA6969B3E4CAA877356 /* Pods-CBCameraViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CBCameraViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		0FC49686D0483A7AB77CC614CB984EDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FE961E25E8F7D966F46F67A4D0B56A9 /* Pods-CBCameraViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBCameraViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ViewController+SnapKit.swift"; path = "Source/ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		1E249BDEE37AD16B7D177DFC6BCA972D /* Pods-CBCameraViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CBCameraViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		22FB3C40FE3CCFBB4C8F225CF22C521E /* Pods_CBCameraViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBCameraViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapKit.swift; path = Source/SnapKit.swift; sourceTree = "<group>"; };
 		2AA94C0B14903364FA83139D9ECEB13F /* Pods-CBCameraViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CBCameraViewController_Example.modulemap"; sourceTree = "<group>"; };
 		2E1BFF2A2D27E9E5D74E4189E32ED868 /* Pods-CBCameraViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CBCameraViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		30FB961954C83B8C612F747D7505FA6C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		3061A45F7542E986BCB23EBBD8AD4A13 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		3A872E1DA3F3774F9875343CAC790F23 /* Pods_CBCameraViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBCameraViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		45E9E270E1B1E3C6C8E99029170EBA7E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47FB91242DAF418BCFC021B0DB446C65 /* Pods-CBCameraViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBCameraViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5050B5E95358805D31544D587D8F69D2 /* Pods_CBCameraViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBCameraViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		495929FB6F57FC07CF2233838AD92579 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		4D1D10525428EE42117D40A1A64556D6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
+		56B1FCA085C2AC4CDCEB52E3588F26EB /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		63050D747C833A7730F2D963963CCC22 /* Pods-CBCameraViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CBCameraViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		678A342AFA426550B008C81070369F37 /* Pods-CBCameraViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBCameraViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		76CAB193E9957571DE86573CCCD8BAA7 /* CBCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C197BD5CEE9D1CCAD36C449FAABD36F /* Pods-CBCameraViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CBCameraViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		83BE404D423CA9F9E3EC340946368DB4 /* Pods-CBCameraViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBCameraViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		86C811467EBC527F80DBB9123C8581C5 /* CBCameraViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CBCameraViewController.swift; sourceTree = "<group>"; };
 		8910357E891BF675621AF1AB4131F6A6 /* CBCameraViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CBCameraViewController.modulemap; sourceTree = "<group>"; };
+		90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		949880158A56DF2BC5A6DFB629D0211A /* Pods_CBCameraViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CBCameraViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9671D71A82C935A44E2EAF2FF1142A0E /* CBCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CBCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C745F502C842A223464EC61885F02BB /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		A03EFFB295211A70F01FAD48D41DF5F3 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		A11DF91325CBAE20D79CC4BB42518493 /* Pods-CBCameraViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBCameraViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A335BB36F26F93EB01EB805FA868710C /* CBCameraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CBCameraViewController-dummy.m"; sourceTree = "<group>"; };
+		A7C496DA4CA3F61B29BB063F74876C70 /* EdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeInsets.swift; path = Source/EdgeInsets.swift; sourceTree = "<group>"; };
+		A804ABA92EC1DA52844E140917F08DF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAB209D2C67B1E43DABC73864994EA6E /* Pods-CBCameraViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBCameraViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0221B07AAAFEC3664AF51B217A34F1 /* CBCameraViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CBCameraViewController.xcconfig; sourceTree = "<group>"; };
+		B260E880497E76F57AA763C9ABF11A37 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		B8E1977494B8EBF950677D57C4241662 /* Pods-CBCameraViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CBCameraViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		C42660327E8AE5D2C43B36603B3B5F71 /* Pods-CBCameraViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CBCameraViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C42E6B36692CB79785C933E25719FA6F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D764A0DCA9D80C26BBE3382B92D5ECC1 /* Pods-CBCameraViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CBCameraViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		DFC5D659BE1775CA8C0159CC67AE70D3 /* Pods-CBCameraViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBCameraViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		E4D9D4CBA5D46EA0D286F93CBD99F66A /* Pods-CBCameraViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CBCameraViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E7B9DF1FA57C4F65812C118D19C44E07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		ED1FEB682D942A72CB55C5C0F5179FE8 /* CBCameraViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CBCameraViewController-prefix.pch"; sourceTree = "<group>"; };
 		F13C304B25335D818BF266E6FCEBDDFE /* Pods-CBCameraViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CBCameraViewController_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1C321C1F237D873CDF9489D775265557 /* Frameworks */ = {
+		1A0A7EF5D64C03758421003086C5D7FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE640A51F12A45DE40E68A5CF426F10 /* Foundation.framework in Frameworks */,
+				C71A48334655E0F57B7BB9AB616193DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33CCB9995502D3523A1AE536565B3AB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9113B5CD2CB378387BE2391BEA8BCC /* Foundation.framework in Frameworks */,
+				0B1FA36B868AE285F68D404E9860A8FC /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A111EEFDB781FE7E07B7D87E94AAB45B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590C29B3F3E888539DD9F62AC2EA22D4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,17 +148,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6372E4DC815DEEB96A70D5F68900BFF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A288B71DD02141C1898946AEA043A960 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0746E6D1569BF85ED527436BB0AC6171 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9671D71A82C935A44E2EAF2FF1142A0E /* CBCameraViewController.framework */,
+				3A872E1DA3F3774F9875343CAC790F23 /* Pods_CBCameraViewController_Example.framework */,
+				949880158A56DF2BC5A6DFB629D0211A /* Pods_CBCameraViewController_Tests.framework */,
+				B260E880497E76F57AA763C9ABF11A37 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0F3E13C1690321450ABEC1587FADED4E /* Pods-CBCameraViewController_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,14 +202,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		4F607A59082390D01E01DF38984DABA4 /* Pods-CBCameraViewController_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +220,14 @@
 			path = "Target Support Files/Pods-CBCameraViewController_Example";
 			sourceTree = "<group>";
 		};
+		5D174CF6C4E2603C8D08E9FE4C94D078 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				86C811467EBC527F80DBB9123C8581C5 /* CBCameraViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7806DDB2951F4D4ED4F6E6C402F04885 /* CBCameraViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,23 +238,66 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		7A30ADABC44CCA0D9BC282B82A6F71FB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A804ABA92EC1DA52844E140917F08DF4 /* Info.plist */,
+				56B1FCA085C2AC4CDCEB52E3588F26EB /* SnapKit.modulemap */,
+				90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */,
+				079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */,
+				495929FB6F57FC07CF2233838AD92579 /* SnapKit-prefix.pch */,
+				17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		7BD5C0E670D2006F5A5363B366998FC5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4D1D10525428EE42117D40A1A64556D6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				30EDD4AD12AB0A346B33E8C04BCAB835 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				E6D688C562CFCC3D2860D9FB74B64511 /* Products */,
+				D8B25C6DF01BE2C3F2FA6A25AEE6417A /* Frameworks */,
+				AAD880A40C1D678CA44C4575218EDE0E /* Pods */,
+				0746E6D1569BF85ED527436BB0AC6171 /* Products */,
 				D212DE681FA048803B641576FFB0AEA2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AAD880A40C1D678CA44C4575218EDE0E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				B3254E0B2B4708A89CF556DF239CDBA9 /* SnapKit */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3254E0B2B4708A89CF556DF239CDBA9 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				9C745F502C842A223464EC61885F02BB /* Constraint.swift */,
+				DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */,
+				3061A45F7542E986BCB23EBBD8AD4A13 /* ConstraintDescription.swift */,
+				E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */,
+				A03EFFB295211A70F01FAD48D41DF5F3 /* ConstraintMaker.swift */,
+				92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */,
+				415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */,
+				A7C496DA4CA3F61B29BB063F74876C70 /* EdgeInsets.swift */,
+				B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */,
+				1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */,
+				55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */,
+				1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */,
+				7A30ADABC44CCA0D9BC282B82A6F71FB /* Support Files */,
+			);
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		D212DE681FA048803B641576FFB0AEA2 /* Targets Support Files */ = {
@@ -199,37 +312,44 @@
 		D32EA30A50BABBB29D9585B3AC58931D /* CBCameraViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DC4CA72C9087CE8F1F671A8EAB8D242F /* Classes */,
+				5D174CF6C4E2603C8D08E9FE4C94D078 /* Classes */,
 			);
 			path = CBCameraViewController;
 			sourceTree = "<group>";
 		};
-		DC4CA72C9087CE8F1F671A8EAB8D242F /* Classes */ = {
+		D8B25C6DF01BE2C3F2FA6A25AEE6417A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				30FB961954C83B8C612F747D7505FA6C /* ReplaceMe.swift */,
+				C42E6B36692CB79785C933E25719FA6F /* SnapKit.framework */,
+				7BD5C0E670D2006F5A5363B366998FC5 /* iOS */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		E6D688C562CFCC3D2860D9FB74B64511 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				76CAB193E9957571DE86573CCCD8BAA7 /* CBCameraViewController.framework */,
-				5050B5E95358805D31544D587D8F69D2 /* Pods_CBCameraViewController_Example.framework */,
-				22FB3C40FE3CCFBB4C8F225CF22C521E /* Pods_CBCameraViewController_Tests.framework */,
-			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2CD73D2194782881EB70562E6E79CEFC /* Headers */ = {
+		0F98B045947A9EC5CEB80D763327C6D4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D58CAC0A940957531DEF397E2DD6FB /* Pods-CBCameraViewController_Example-umbrella.h in Headers */,
+				EF0AC3228727D5E173A5F400622D979A /* Pods-CBCameraViewController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F86592436E0B9BBEF18428518DF139 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4800DC2686D5445468C91DAA209F882E /* CBCameraViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F3A1552202143E9CD32D8F8E5B6740 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C1E2DEF17730A1CC3B229A803AB555 /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,52 +361,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF2771CF488828E555664CAA27B141D7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				12C1C3D5971278D4692DE095C5964E0D /* CBCameraViewController-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		28EAB6337BA8BA6C8DA267692E70E161 /* CBCameraViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A55CAD93057D09C40B0EBEAA9BD16D4 /* Build configuration list for PBXNativeTarget "CBCameraViewController" */;
-			buildPhases = (
-				211C4F44FB591D9923226CABEE8BC627 /* Sources */,
-				F6372E4DC815DEEB96A70D5F68900BFF /* Frameworks */,
-				DF2771CF488828E555664CAA27B141D7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CBCameraViewController;
-			productName = CBCameraViewController;
-			productReference = 76CAB193E9957571DE86573CCCD8BAA7 /* CBCameraViewController.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		53F187B87AC308B5F487C89EA755C8E3 /* Pods-CBCameraViewController_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 86610CEF65092CAC7CFDD3ADB9AEEED0 /* Build configuration list for PBXNativeTarget "Pods-CBCameraViewController_Example" */;
-			buildPhases = (
-				B42C1F3325A484AC253CBDA7E78F953D /* Sources */,
-				1C321C1F237D873CDF9489D775265557 /* Frameworks */,
-				2CD73D2194782881EB70562E6E79CEFC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				866C0688B96A7E65572954DE235DAB07 /* PBXTargetDependency */,
-			);
-			name = "Pods-CBCameraViewController_Example";
-			productName = "Pods-CBCameraViewController_Example";
-			productReference = 5050B5E95358805D31544D587D8F69D2 /* Pods_CBCameraViewController_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		6B531A23471F1361B34DC0730AEBA7DE /* Pods-CBCameraViewController_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD013CFFE9798E7160E56EA074F1576F /* Build configuration list for PBXNativeTarget "Pods-CBCameraViewController_Tests" */;
@@ -301,7 +378,61 @@
 			);
 			name = "Pods-CBCameraViewController_Tests";
 			productName = "Pods-CBCameraViewController_Tests";
-			productReference = 22FB3C40FE3CCFBB4C8F225CF22C521E /* Pods_CBCameraViewController_Tests.framework */;
+			productReference = 949880158A56DF2BC5A6DFB629D0211A /* Pods_CBCameraViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		700BCCE2B11ADD20F6D485ABF96F9037 /* CBCameraViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6C1484C16C31B63342830C77EBBD9F /* Build configuration list for PBXNativeTarget "CBCameraViewController" */;
+			buildPhases = (
+				90E1DF8E3D21BAF9E2F6145941D9FC12 /* Sources */,
+				33CCB9995502D3523A1AE536565B3AB6 /* Frameworks */,
+				A1F86592436E0B9BBEF18428518DF139 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC05BDC3570099B500B06D097C5E26EE /* PBXTargetDependency */,
+			);
+			name = CBCameraViewController;
+			productName = CBCameraViewController;
+			productReference = 9671D71A82C935A44E2EAF2FF1142A0E /* CBCameraViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78F989564630393E46EDE33EA9700488 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7EC38E2E13DA08F07A75DC3D2C5DAF0 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				AB0B8832BF79AADF1A9B04E5008F21F8 /* Sources */,
+				1A0A7EF5D64C03758421003086C5D7FA /* Frameworks */,
+				C5F3A1552202143E9CD32D8F8E5B6740 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = B260E880497E76F57AA763C9ABF11A37 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B5B6FE2D12CE6203AEDB9502C68DDEF /* Pods-CBCameraViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15BF834BF84B48835541D3E34AE73DE /* Build configuration list for PBXNativeTarget "Pods-CBCameraViewController_Example" */;
+			buildPhases = (
+				A7811606D3C85FBB3163F560E84C6A09 /* Sources */,
+				A111EEFDB781FE7E07B7D87E94AAB45B /* Frameworks */,
+				0F98B045947A9EC5CEB80D763327C6D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C27D2C5BC73E43564ED549DDF03505 /* PBXTargetDependency */,
+				FB8668A503B4057D758651DBE639524E /* PBXTargetDependency */,
+			);
+			name = "Pods-CBCameraViewController_Example";
+			productName = "Pods-CBCameraViewController_Example";
+			productReference = 3A872E1DA3F3774F9875343CAC790F23 /* Pods_CBCameraViewController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -321,27 +452,19 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E6D688C562CFCC3D2860D9FB74B64511 /* Products */;
+			productRefGroup = 0746E6D1569BF85ED527436BB0AC6171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28EAB6337BA8BA6C8DA267692E70E161 /* CBCameraViewController */,
-				53F187B87AC308B5F487C89EA755C8E3 /* Pods-CBCameraViewController_Example */,
+				700BCCE2B11ADD20F6D485ABF96F9037 /* CBCameraViewController */,
+				8B5B6FE2D12CE6203AEDB9502C68DDEF /* Pods-CBCameraViewController_Example */,
 				6B531A23471F1361B34DC0730AEBA7DE /* Pods-CBCameraViewController_Tests */,
+				78F989564630393E46EDE33EA9700488 /* SnapKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		211C4F44FB591D9923226CABEE8BC627 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				339937CB3D2B3824279F6BBD425765D8 /* CBCameraViewController-dummy.m in Sources */,
-				06355C1AA7F6D825D20C369311C33BBE /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43BE4DAD504489832992B5CAEB74D9C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,26 +473,101 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B42C1F3325A484AC253CBDA7E78F953D /* Sources */ = {
+		90E1DF8E3D21BAF9E2F6145941D9FC12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				986486FC3AD152F8201FC996F48501BA /* Pods-CBCameraViewController_Example-dummy.m in Sources */,
+				4426F0D364A7F868434BD33B595AC9B7 /* CBCameraViewController-dummy.m in Sources */,
+				00345C04A9DB94FA49674359D25281A7 /* CBCameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7811606D3C85FBB3163F560E84C6A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E5DCE4727AF2DADEB75D6F0B687F5E /* Pods-CBCameraViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0B8832BF79AADF1A9B04E5008F21F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3FDE191E4DD958F9B69ABE2A5AF9AD /* Constraint.swift in Sources */,
+				50EFDBA40D0C04D42607AC8E145CC2CE /* ConstraintAttributes.swift in Sources */,
+				3258C6138A48080C5E97521F754499E5 /* ConstraintDescription.swift in Sources */,
+				7207C110A0FFC203B0B0311F0B07F12A /* ConstraintItem.swift in Sources */,
+				47B33C0F4692353F4C2B946DA75DF034 /* ConstraintMaker.swift in Sources */,
+				5EC95F67499D502CACDE5C20BF25355F /* ConstraintRelation.swift in Sources */,
+				E9D825EDFB7B48387DCF5A7FC8D362C2 /* Debugging.swift in Sources */,
+				8BBDE7D1CE0AEEF814FD78C44C5B7104 /* EdgeInsets.swift in Sources */,
+				0F6B8CB41553F330DB41AD126090E659 /* LayoutConstraint.swift in Sources */,
+				C1780EC95CA8E029109BF53D7DE0A8BB /* SnapKit-dummy.m in Sources */,
+				AEDB3C6BE9424E276FCB7764460DCFB8 /* SnapKit.swift in Sources */,
+				F907F062A89C7F5E668F82546E3EB611 /* View+SnapKit.swift in Sources */,
+				0B28BC8B487C0C9D785CACB2008649FD /* ViewController+SnapKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		866C0688B96A7E65572954DE235DAB07 /* PBXTargetDependency */ = {
+		40C27D2C5BC73E43564ED549DDF03505 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CBCameraViewController;
-			target = 28EAB6337BA8BA6C8DA267692E70E161 /* CBCameraViewController */;
-			targetProxy = 196EFFAC83C276E7AD7289BF57F3B141 /* PBXContainerItemProxy */;
+			target = 700BCCE2B11ADD20F6D485ABF96F9037 /* CBCameraViewController */;
+			targetProxy = B9BC6CF1F3D70ECE19B8B81FF7BAAD6B /* PBXContainerItemProxy */;
+		};
+		FB8668A503B4057D758651DBE639524E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 78F989564630393E46EDE33EA9700488 /* SnapKit */;
+			targetProxy = B2DF66B49C658CD734794F57F5A891C0 /* PBXContainerItemProxy */;
+		};
+		FC05BDC3570099B500B06D097C5E26EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 78F989564630393E46EDE33EA9700488 /* SnapKit */;
+			targetProxy = A4691E55C1546E8310DEFFB0BC40C9E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		008A79BE3DA4A05FC6DE4CA2A039EA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB209D2C67B1E43DABC73864994EA6E /* Pods-CBCameraViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CBCameraViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CBCameraViewController_Example/Pods-CBCameraViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CBCameraViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,7 +606,7 @@
 			};
 			name = Release;
 		};
-		4B32DE4D1859FAB388911F0D00E9B060 /* Release */ = {
+		2FD80C6BF9021BF1CAFAF6004FB1D307 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4D9D4CBA5D46EA0D286F93CBD99F66A /* Pods-CBCameraViewController_Example.release.xcconfig */;
 			buildSettings = {
@@ -440,40 +638,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		4F0C3DADB1BCEE0E78F6A9BC13FF1FC5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAB209D2C67B1E43DABC73864994EA6E /* Pods-CBCameraViewController_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CBCameraViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CBCameraViewController_Example/Pods-CBCameraViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CBCameraViewController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		85F3FBD8D7906BFCF41871F18A4B2953 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -508,13 +672,43 @@
 			};
 			name = Release;
 		};
-		A26C5A04D84FA4A81517D5C317797144 /* Debug */ = {
+		9EA8CA07211EE1095ED0150D76E16173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B593EC398780772A24DEB8D96C392C0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF0221B07AAAFEC3664AF51B217A34F1 /* CBCameraViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -527,16 +721,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CBCameraViewController/CBCameraViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = CBCameraViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		C7E7412D27E34349FA2B2F19E1CCA855 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -613,13 +806,42 @@
 			};
 			name = Debug;
 		};
-		FAB437B88E3CC0891AA8A2D637832BAD /* Release */ = {
+		D7D3C2D532978FBB44BC11984AF8C7F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D8599FCFCA98DB19D3DE0AD81D9CD6 /* SnapKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA2DEFBBFB58E9705C02664EA311E704 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AF0221B07AAAFEC3664AF51B217A34F1 /* CBCameraViewController.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -632,15 +854,16 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CBCameraViewController/CBCameraViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = CBCameraViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -654,20 +877,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A55CAD93057D09C40B0EBEAA9BD16D4 /* Build configuration list for PBXNativeTarget "CBCameraViewController" */ = {
+		C7EC38E2E13DA08F07A75DC3D2C5DAF0 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A26C5A04D84FA4A81517D5C317797144 /* Debug */,
-				FAB437B88E3CC0891AA8A2D637832BAD /* Release */,
+				9EA8CA07211EE1095ED0150D76E16173 /* Debug */,
+				D7D3C2D532978FBB44BC11984AF8C7F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86610CEF65092CAC7CFDD3ADB9AEEED0 /* Build configuration list for PBXNativeTarget "Pods-CBCameraViewController_Example" */ = {
+		CE6C1484C16C31B63342830C77EBBD9F /* Build configuration list for PBXNativeTarget "CBCameraViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F0C3DADB1BCEE0E78F6A9BC13FF1FC5 /* Debug */,
-				4B32DE4D1859FAB388911F0D00E9B060 /* Release */,
+				FA2DEFBBFB58E9705C02664EA311E704 /* Debug */,
+				B593EC398780772A24DEB8D96C392C0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15BF834BF84B48835541D3E34AE73DE /* Build configuration list for PBXNativeTarget "Pods-CBCameraViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008A79BE3DA4A05FC6DE4CA2A039EA99 /* Debug */,
+				2FD80C6BF9021BF1CAFAF6004FB1D307 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

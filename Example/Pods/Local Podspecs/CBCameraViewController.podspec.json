@@ -1,9 +1,9 @@
 {
   "name": "CBCameraViewController",
-  "version": "0.1.0",
-  "summary": "A short description of CBCameraViewController.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/CBCameraViewController",
+  "version": "0.0.1",
+  "summary": "This pod helps you to create a camera view controller that takes photos and videos",
+  "description": "This CBCameraViewController helps you to create a view controlelr that has a built-in camera function in it. You can call its delegate to trigger certain actions when the camera button is pressed and when the user captures a photo or while recording.",
+  "homepage": "https://github.com/cathy810218/CBCameraViewController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "Cathy Oun": "cathy810218@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/CBCameraViewController.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/cathy810218/CBCameraViewController.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "CBCameraViewController/Classes/**/*"
+  "source_files": "CBCameraViewController/Classes/**/*",
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  }
 }
