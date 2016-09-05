@@ -45,12 +45,12 @@ public class CBCameraViewController: UIViewController {
             make.width.height.equalTo(50)
             make.bottom.centerX.equalTo(view)
         }
-        captureButton.backgroundColor = UIColor.redColor()
+        captureButton.setTitle("Capture", forState: .Normal)
         captureButton.addTarget(self, action: #selector(captureImage), forControlEvents: .TouchUpInside)
     
         view.addSubview(videoButton)
         videoButton.snp_makeConstraints { (make) in
-            make.width.height.equalTo(50)
+            make.width.height.equalTo(70)
             make.bottom.equalTo(view)
             make.right.equalTo(captureButton.snp_left).offset(-15)
         }
@@ -68,6 +68,7 @@ public class CBCameraViewController: UIViewController {
 
     @objc private func captureImage() {
         cameraManager.cameraOutputMode = .StillImage
+        cameraManager.writeFilesToPhoneLibrary = false
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
             self.outputImage = image
             self.delegate?.cameraViewController?(self, didTakePhoto: image!)
@@ -85,7 +86,6 @@ public class CBCameraViewController: UIViewController {
             videoButton.setTitle("Stop", forState: .Normal)
             isRecording = true
         }
-
     }
     
     private func stopRecording() {
