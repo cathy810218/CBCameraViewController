@@ -4,8 +4,8 @@ target 'CBCameraViewController_Example' do
 
   pod 'CBCameraViewController', :path => '../'
   pod 'SnapKit'
-
-
+  pod 'CameraManager'
+  
   target 'CBCameraViewController_Tests' do
     inherit! :search_paths
 
