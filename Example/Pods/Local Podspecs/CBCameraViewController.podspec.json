@@ -22,6 +22,9 @@
   "dependencies": {
     "SnapKit": [
 
+    ],
+    "CameraManager": [
+      "~> 2.2"
     ]
   }
 }
