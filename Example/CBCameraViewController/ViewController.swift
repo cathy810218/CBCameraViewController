@@ -28,11 +28,7 @@ class ViewController: UIViewController, CBCameraViewControllerDelegate {
         // save photo
         cameraViewController.cameraOutputQuality = CBCameraOutputQuality.Medium
         print("Photo captured!")
-//        let data = UIImagePNGRepresentation(asset)
-        ALAssetsLibrary().writeImageToSavedPhotosAlbum(asset.CGImage, orientation: ALAssetOrientation(rawValue: asset.imageOrientation.rawValue)!,
-                                                       completionBlock:{ (path:NSURL!, error:NSError!) -> Void in
-                                                        print("\(path)")  //Here you will get your path
-        })
+        UIImageWriteToSavedPhotosAlbum(asset, nil, nil, nil)
     }
     
     func cameraViewController(cameraViewController: CBCameraViewController, didRecoredVideo assetURL: NSURL) {

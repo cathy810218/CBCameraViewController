@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import CameraManager
+import AVFoundation
 import Photos
 
 public enum CBCameraOutputQuality: Int {
@@ -80,9 +81,36 @@ public class CBCameraViewController: UIViewController {
     @objc private func captureImage() {
         cameraManager.cameraOutputMode = .StillImage
         cameraManager.writeFilesToPhoneLibrary = false
+
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
-            self.delegate?.cameraViewController?(self, didTakePhoto: image!)
+            //TODO: Customize image size
+            if let image = image {
+                let scaledImage = self.resizeImageToFitFullScreen(image)
+                self.delegate?.cameraViewController?(self, didTakePhoto: scaledImage)
+
+            }
         })
+    }
+    private func resizeImageToFitFullScreen(image: UIImage) -> UIImage{
+        let newHeight = UIScreen.mainScreen().bounds.height
+        let newWidth = UIScreen.mainScreen().bounds.width
+        
+        let aspectHeight = newHeight / image.size.height
+        let aspectWidth = newWidth / image.size.width
+        let aspectRatio = max(aspectWidth, aspectHeight)
+        
+        var scaledImageRect = CGRectZero
+        scaledImageRect.size.height = image.size.height * aspectRatio
+        scaledImageRect.size.width = image.size.width * aspectRatio
+        scaledImageRect.origin.x = (newWidth - scaledImageRect.size.width) / 2
+        scaledImageRect.origin.y = (newHeight - scaledImageRect.size.height) / 2
+
+        
+        UIGraphicsBeginImageContext(CGSizeMake(newWidth, newHeight))
+        image.drawInRect(scaledImageRect)
+        let resultImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return resultImage
     }
     
     @objc private func recordVideo() {
@@ -108,7 +136,6 @@ public class CBCameraViewController: UIViewController {
             }
         })
     }
-    
 
     @objc private func changeFlashMode() {
         cameraManager.changeFlashMode()
