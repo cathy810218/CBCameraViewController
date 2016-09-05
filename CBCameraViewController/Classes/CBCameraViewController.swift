@@ -11,6 +11,10 @@ import SnapKit
 import CameraManager
 import Photos
 
+public enum CBCameraOutputQuality: Int {
+    case Low, Medium, High
+}
+
 public class CBCameraViewController: UIViewController {
     public weak var delegate: CBCameraViewControllerDelegate?
     
@@ -19,11 +23,17 @@ public class CBCameraViewController: UIViewController {
     public var videoButton   = UIButton()
     public var flashButton   = UIButton()
     public var outputURL = NSURL()
-    var outputImage: UIImage?
-    
+
     private let cameraManager = CameraManager()
     private var isRecording = false
-
+    
+    public var cameraOutputQuality: CBCameraOutputQuality = .Medium {
+        didSet {
+            cameraManager.cameraOutputQuality =
+                CameraOutputQuality(rawValue: cameraOutputQuality.rawValue)!
+        }
+    }
+    
     //MARK: View lifecycle
     public init() {
         super.init(nibName: nil, bundle: nil)
@@ -42,7 +52,8 @@ public class CBCameraViewController: UIViewController {
         
         view.addSubview(captureButton)
         captureButton.snp_makeConstraints { (make) in
-            make.width.height.equalTo(50)
+            make.height.equalTo(50)
+            make.width.equalTo(70)
             make.bottom.centerX.equalTo(view)
         }
         captureButton.setTitle("Capture", forState: .Normal)
@@ -50,7 +61,7 @@ public class CBCameraViewController: UIViewController {
     
         view.addSubview(videoButton)
         videoButton.snp_makeConstraints { (make) in
-            make.width.height.equalTo(70)
+            make.width.height.equalTo(50)
             make.bottom.equalTo(view)
             make.right.equalTo(captureButton.snp_left).offset(-15)
         }
@@ -70,7 +81,6 @@ public class CBCameraViewController: UIViewController {
         cameraManager.cameraOutputMode = .StillImage
         cameraManager.writeFilesToPhoneLibrary = false
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
-            self.outputImage = image
             self.delegate?.cameraViewController?(self, didTakePhoto: image!)
         })
     }
@@ -92,7 +102,7 @@ public class CBCameraViewController: UIViewController {
         cameraManager.stopVideoRecording({ (videoURL, error) -> Void in
             print("in here")
             do {
-                self.delegate?.cameraViewController?(self, didRecoredVideo: videoURL)
+                self.delegate?.cameraViewController?(self, didRecoredVideo: videoURL!)
             } catch let outError {
                 print(outError)
             }
@@ -115,24 +125,3 @@ public class CBCameraViewController: UIViewController {
     optional func cameraViewController(cameraViewController: CBCameraViewController, didTakePhoto asset: UIImage)
     optional func cameraViewController(cameraViewController: CBCameraViewController, didRecoredVideo assetURL: NSURL)
 }
-
-class FileUtils: NSObject {
-    static func createCleanFileURL(fileName fileName:String) -> NSURL {
-        let fileManager = NSFileManager.defaultManager()
-        let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        guard let documentDirectory: NSURL = urls.first else {
-            fatalError("documentDir Error")
-        }
-        let videoOutputURL = documentDirectory.URLByAppendingPathComponent(fileName)
-        
-        if NSFileManager.defaultManager().fileExistsAtPath(videoOutputURL.path!) {
-            do {
-                try NSFileManager.defaultManager().removeItemAtPath(videoOutputURL.path!)
-            } catch {
-                fatalError("Unable to delete file: \(error) : \(#function).")
-            }
-        }
-        return videoOutputURL
-    }
-}
-
