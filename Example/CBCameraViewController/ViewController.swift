@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    self.outputURL = FileUtils.createCleanFileURL(fileName: "outputVideo.mp4")
+//    print("video url: \(videoURL)")
+//    print("output url: \(self.outputURL)")
+//    let data = NSData(contentsOfURL: videoURL!)
+//    try data?.writeToURL(self.outputURL, options: NSDataWritingOptions.DataWritingFileProtectionNone)
 
 }
 

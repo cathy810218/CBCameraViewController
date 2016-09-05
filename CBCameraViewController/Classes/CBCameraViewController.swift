@@ -92,12 +92,7 @@ public class CBCameraViewController: UIViewController {
         cameraManager.stopVideoRecording({ (videoURL, error) -> Void in
             print("in here")
             do {
-                self.outputURL = FileUtils.createCleanFileURL(fileName: "outputVideo.mp4")
-                print("video url: \(videoURL)")
-                print("output url: \(self.outputURL)")
-                let data = NSData(contentsOfURL: videoURL!)
-                try data?.writeToURL(self.outputURL, options: NSDataWritingOptions.DataWritingFileProtectionNone)
-                self.delegate?.cameraViewController?(self, didRecoredVideo: self.outputURL)
+                self.delegate?.cameraViewController?(self, didRecoredVideo: videoURL)
             } catch let outError {
                 print(outError)
             }
