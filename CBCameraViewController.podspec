@@ -31,10 +31,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'CBCameraViewController/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CBCameraViewController' => ['CBCameraViewController/Assets/*.png']
-  # }
+  s.resources = ['CBCameraViewController/Assets/*.xcassets']
+
+  #s.resource_bundles = {
+  #  'CBCameraViewController' => ['CBCameraViewController/Assets/*.png']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

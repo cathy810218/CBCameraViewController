@@ -12,6 +12,13 @@ import CameraManager
 import AVFoundation
 import Photos
 
+extension UIImage {
+    static func bundleImage(named named: String) -> UIImage {
+        let bundle = NSBundle(forClass: CBCameraViewController.self)
+        return UIImage(named: named, inBundle: bundle, compatibleWithTraitCollection: nil)!
+    }
+}
+
 public enum CBCameraOutputQuality: Int {
     case Low, Medium, High
 }
@@ -53,37 +60,35 @@ public class CBCameraViewController: UIViewController {
         
         view.addSubview(captureButton)
         captureButton.snp_makeConstraints { (make) in
-            make.height.equalTo(50)
-            make.width.equalTo(70)
+            make.width.height.equalTo(80)
             make.bottom.centerX.equalTo(view)
         }
-        captureButton.setTitle("Capture", forState: .Normal)
+        captureButton.setImage(UIImage.bundleImage(named: "camera"), forState: .Normal)
         captureButton.addTarget(self, action: #selector(captureImage), forControlEvents: .TouchUpInside)
     
         view.addSubview(videoButton)
         videoButton.snp_makeConstraints { (make) in
-            make.width.height.equalTo(50)
+            make.width.height.equalTo(80)
             make.bottom.equalTo(view)
             make.right.equalTo(captureButton.snp_left).offset(-15)
         }
-        videoButton.setTitle("Video", forState: .Normal)
+        videoButton.setImage(UIImage.bundleImage(named: "video"), forState: .Normal)
         videoButton.addTarget(self, action: #selector(recordVideo), forControlEvents: .TouchUpInside)
         
         view.addSubview(flashButton)
         flashButton.snp_makeConstraints { (make) in
-            make.height.width.equalTo(50)
-            make.top.right.equalTo(view)
+            make.height.width.equalTo(20)
+            make.right.equalTo(view).offset(-20)
+            make.top.equalTo(view).offset(30)
         }
-        flashButton.backgroundColor = UIColor.yellowColor()
+        flashButton.setImage(UIImage.bundleImage(named: "flash-off"), forState: .Normal)
         flashButton.addTarget(self, action: #selector(changeFlashMode), forControlEvents: .TouchUpInside)
     }
 
     @objc private func captureImage() {
         cameraManager.cameraOutputMode = .StillImage
         cameraManager.writeFilesToPhoneLibrary = false
-
         cameraManager.capturePictureWithCompletion({ (image, error) -> Void in
-            //TODO: Customize image size
             if let image = image {
                 let scaledImage = self.resizeImageToFitFullScreen(image)
                 self.delegate?.cameraViewController?(self, didTakePhoto: scaledImage)
@@ -139,6 +144,17 @@ public class CBCameraViewController: UIViewController {
 
     @objc private func changeFlashMode() {
         cameraManager.changeFlashMode()
+
+        switch cameraManager.flashMode.rawValue {
+        case 0:
+            flashButton.setImage(UIImage.bundleImage(named: "flash-off"), forState: .Normal)
+        case 1:
+            flashButton.setImage(UIImage.bundleImage(named: "flash-on"), forState: .Normal)
+        case 2:
+            flashButton.setImage(UIImage.bundleImage(named: "flash-auto"), forState: .Normal)
+        default:
+            break
+        }
         print(cameraManager.flashMode.rawValue)
     }
     

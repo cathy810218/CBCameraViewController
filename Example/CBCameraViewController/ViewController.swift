@@ -8,7 +8,6 @@
 
 import UIKit
 import CBCameraViewController
-import AssetsLibrary
 import SnapKit
 
 class ViewController: UIViewController, CBCameraViewControllerDelegate {

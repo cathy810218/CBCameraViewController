@@ -19,12 +19,15 @@
     "ios": "8.0"
   },
   "source_files": "CBCameraViewController/Classes/**/*",
+  "resources": [
+    "CBCameraViewController/Assets/*.xcassets"
+  ],
   "dependencies": {
     "SnapKit": [
 
     ],
     "CameraManager": [
-      "~> 2.2"
+
     ]
   }
 }
