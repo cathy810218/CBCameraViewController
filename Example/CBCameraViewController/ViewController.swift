@@ -25,7 +25,6 @@ class ViewController: UIViewController, CBCameraViewControllerDelegate {
     
     func cameraViewController(cameraViewController: CBCameraViewController, didTakePhoto asset: UIImage) {
         // save photo
-        cameraViewController.cameraOutputQuality = CBCameraOutputQuality.Medium
         print("Photo captured!")
         UIImageWriteToSavedPhotosAlbum(asset, nil, nil, nil)
     }
