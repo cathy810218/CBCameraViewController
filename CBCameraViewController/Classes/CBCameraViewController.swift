@@ -77,7 +77,7 @@ public class CBCameraViewController: UIViewController {
         
         view.addSubview(flashButton)
         flashButton.snp_makeConstraints { (make) in
-            make.height.width.equalTo(20)
+            make.height.width.equalTo(35)
             make.right.equalTo(view).offset(-20)
             make.top.equalTo(view).offset(30)
         }
@@ -92,7 +92,6 @@ public class CBCameraViewController: UIViewController {
             if let image = image {
                 let scaledImage = self.resizeImageToFitFullScreen(image)
                 self.delegate?.cameraViewController?(self, didTakePhoto: scaledImage)
-
             }
         })
     }
@@ -121,21 +120,21 @@ public class CBCameraViewController: UIViewController {
     @objc private func recordVideo() {
         cameraManager.cameraOutputMode = .VideoWithMic
         if isRecording {
-            videoButton.setTitle("Video", forState: .Normal)
+            videoButton.setImage(UIImage.bundleImage(named: "video"), forState: .Normal)
             stopRecording()
             isRecording = false
         } else {
+            videoButton.setImage(UIImage.bundleImage(named: "stop"), forState: .Normal)
             cameraManager.startRecordingVideo()
-            videoButton.setTitle("Stop", forState: .Normal)
             isRecording = true
         }
     }
     
     private func stopRecording() {
         cameraManager.stopVideoRecording({ (videoURL, error) -> Void in
-            print("in here")
             do {
                 self.delegate?.cameraViewController?(self, didRecoredVideo: videoURL!)
+                print("in here")
             } catch let outError {
                 print(outError)
             }
