@@ -19,8 +19,8 @@ class ViewController: UIViewController, CBCameraViewControllerDelegate {
         cameraVC.delegate = self
     }
     
-    override func viewDidAppear(animated: Bool) {
-        presentViewController(cameraVC, animated: false, completion: nil)
+    override func viewDidAppear(_ animated: Bool) {
+        present(cameraVC, animated: false, completion: nil)
     }
     
     func cameraViewController(cameraViewController: CBCameraViewController, didTakePhoto asset: UIImage) {
@@ -31,11 +31,11 @@ class ViewController: UIViewController, CBCameraViewControllerDelegate {
     
     func cameraViewController(cameraViewController: CBCameraViewController, didRecoredVideo assetURL: NSURL) {
         // save video
-        let outputURL = FileUtils.createCleanFileURL(fileName: "outputVideo.mp4")
+        let outputURL = FileUtils.createCleanFileURL("outputVideo.mp4")
 
-        let data = NSData(contentsOfURL: assetURL)
+        let data = NSData(contentsOf: assetURL as URL)
         do {
-            try data?.writeToURL(outputURL, options: NSDataWritingOptions.DataWritingFileProtectionNone)
+            try data?.write(to: outputURL as URL, options: NSData.WritingOptions.noFileProtection)
         } catch let outError {
             print(outError)
         }
@@ -45,22 +45,22 @@ class ViewController: UIViewController, CBCameraViewControllerDelegate {
 
 
 class FileUtils: NSObject {
-    static func createCleanFileURL(fileName fileName:String) -> NSURL {
-        let fileManager = NSFileManager.defaultManager()
-        let urls = fileManager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        guard let documentDirectory: NSURL = urls.first else {
+    static func createCleanFileURL(_ fileName:String) -> URL {
+        let fileManager = FileManager.default
+        let urls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
+        guard let documentDirectory: NSURL = urls.first as NSURL? else {
             fatalError("documentDir Error")
         }
-        let videoOutputURL = documentDirectory.URLByAppendingPathComponent(fileName)
+        let videoOutputURL = documentDirectory.appendingPathComponent(fileName)
         
-        if NSFileManager.defaultManager().fileExistsAtPath(videoOutputURL.path!) {
+        if FileManager.default.fileExists(atPath: videoOutputURL!.path) {
             do {
-                try NSFileManager.defaultManager().removeItemAtPath(videoOutputURL.path!)
+                try FileManager.default.removeItem(atPath: videoOutputURL!.path)
             } catch {
                 fatalError("Unable to delete file: \(error) : \(#function).")
             }
         }
-        return videoOutputURL
+        return videoOutputURL!
     }
 }
 

@@ -1,9 +1,9 @@
 PODS:
-  - CameraManager (2.2.4)
+  - CameraManager (3.0.0)
   - CBCameraViewController (0.0.1):
     - CameraManager
     - SnapKit
-  - SnapKit (0.22.0)
+  - SnapKit (3.0.1)
 
 DEPENDENCIES:
   - CameraManager
@@ -15,10 +15,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CameraManager: 761f0d3dca325e8dabd46065f0b376798bca66bf
+  CameraManager: 8b92bc0ab51b598d9a4c01998bc9f1efb9b681bf
   CBCameraViewController: 127b085bae2131a8e1b9ce1442f3502c524c8fd1
-  SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
+  SnapKit: f818b8326d45b4e1c777d0ab27b5c0a3624bfdeb
 
-PODFILE CHECKSUM: 6738f711554c0caa931638cfac0be844af729992
+PODFILE CHECKSUM: 9b50784c158b44a2c73e361204e2a05494a7221a
 
 COCOAPODS: 1.0.1
